@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Địa Bàn - Quản lý chi tiêu",
+  title: "Quản lý chi tiêu",
   description: "@HQM - 2026",
   themeColor: "#22c55e",
   manifest: "/manifest.webmanifest",
