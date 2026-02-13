@@ -18,8 +18,13 @@ export const metadata: Metadata = {
   themeColor: "#22c55e",
   manifest: "/manifest.webmanifest",
   icons: {
-    icon: "/favicon.ico",
-    apple: "/favicon.ico",
+    icon: [
+      { url: "/icons/pig-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icons/pig-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/icons/pig-192.png", sizes: "192x192", type: "image/png" },
+    ],
   },
 };
 

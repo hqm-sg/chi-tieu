@@ -2,6 +2,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import Image from "next/image";
 import { Bar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -229,8 +230,14 @@ export default function Home() {
         {/* Header */}
         <header className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-emerald-500 text-white shadow-sm">
-              <PiggyBank className="h-6 w-6" />
+            <div className="relative h-11 w-11 overflow-hidden rounded-2xl bg-emerald-100 shadow-sm">
+              <Image
+                src="/icons/pig-512.png"
+                alt="Biểu tượng heo tiết kiệm"
+                fill
+                className="object-cover"
+                sizes="44px"
+              />
             </div>
             <div>
               <h1 className="text-xl font-semibold tracking-tight text-emerald-900 sm:text-2xl">
